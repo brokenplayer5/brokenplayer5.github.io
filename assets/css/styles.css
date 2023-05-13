@@ -12,8 +12,8 @@ body{
     background-repeat: no-repeat;
     background-color: #000;
     height:100%;
-    width: auto;
-    padding: 10px;
+    width: 100%;
+    padding: 2px;
     font-family: "SmileySans-Obliqu";
 }
 .wrapper{
@@ -37,7 +37,7 @@ body{
     z-index: 2;
 }
 .box01{
-    width: 400px;
+    width: 380px;
     top: 0;
     bottom: 0;
     left: 0;
@@ -162,10 +162,14 @@ body{
     z-index:3;
     height: 500px;
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:580px) {
+    .top>p{
+        font-size: 30px;
+    }
     .footer{
         width: 86%;
         padding: 0;
+        font-size: 18px;
     }
     body{
         width: 100%;
