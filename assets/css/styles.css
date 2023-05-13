@@ -12,7 +12,7 @@ body{
     background-repeat: no-repeat;
     background-color: #000;
     height:100%;
-    width: 100%;
+    width: 98%;
     padding: 2px;
     font-family: "SmileySans-Obliqu";
 }
@@ -35,6 +35,10 @@ body{
     background: inherit;
     filter: blur(10px);
     z-index: 2;
+    padding: -2px;
+}
+.content{
+    box-sizing: content-box;
 }
 .box01{
     width: 380px;
@@ -43,10 +47,14 @@ body{
     left: 0;
     right: 0;
     margin: auto;
+    margin-top: 100px;
+    margin-left: 150px;
     position: relative;
     z-index:3;
+    box-sizing: content-box;
+    float: left;
 }
-.head{
+.box01_top{
     width: 152px;
     height: 152px;
     border-radius: 50%;
@@ -59,14 +67,14 @@ body{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.head:hover{
+.box01_top:hover{
     transform: rotate(360deg);
 }
-.top{
+.box01_middle{
    text-align: center;
    height: 90px;
 }
-.top>p{
+.box01_middle>p{
     text-shadow: 1px 1px 1px #413964;
     color: #101010;
     font-weight: bolder;
@@ -89,46 +97,41 @@ body{
     margin-right: auto;
     z-index: 2;
 }
-.twitter_card{
+.card{
     width: 50px;
     flex: 1;
     text-align: center;
 }
-.icon_twitter{
+.icon-twitter{
     transition: all .2s;
     filter: grayscale(80%) blur(1px);
 }
-.icon_twitter:hover{
+.icon-twitter:hover{
     transform: scale(1.1);
     filter: grayscale(0) blur(0);
 }
-.bilibili_card{
-    width: 89px;
-    flex: 1;
-    text-align: center;
-}
-.icon_bilibili{
+.icon-bilibili{
     transition: all .2s;
-    filter: grayscale(80%) blur(1px);
+    filter: grayscale(80%) blur(0.5px);
 }
-.icon_bilibili:hover{
+.icon-bilibili:hover{
     transform: scale(1.1);
-    filter: grayscale(0) blur(0);
+    filter: grayscale(0) blur(0.5px);
 }
-.music163_card{
-    width: 50px;
-    flex: 1;
-    text-align: center;  
-}
-.icon_music163{
+.icon-music163{
     transition: all .2s;
-    filter: grayscale(80%) blur(1px);
+    filter: grayscale(80%) blur(0.5px);
 }
-.icon_music163:hover{
+.icon-music163:hover{
     transform: scale(1.1);
     filter: grayscale(0) blur(0);
 }
-.footer{
+a{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+.box01_footer{
     display: none;
     letter-spacing: 5px;
     text-shadow: 1px 1px 1px #413964;
@@ -140,36 +143,55 @@ body{
     width: 80%;
     text-align: center;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 25px;
     color: #000;
+    transition: all .3s;
+    z-index: 4;
 }
-.h1-left{
+a:link{
+    list-style: none;
+    text-decoration: none;
+}
+.box01_footer:hover{
+    transform: scale(1.02);
+    background-color: #31313125;
+}
+.box01_footer>.left{
     text-align: left;
     font-weight: bolder;
     font-size: 40px;
 }
-.h1-right{
+.box01_footer>.right{
     text-align: right;
     font-weight: bolder;
     font-size: 40px;
 }
-.box02{
-    width:45%;
+/*.box02{
+    width: 380px;
     top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
+    margin-top: 100px;
+    margin-left: 150px;
     position: relative;
     z-index:3;
-    height: 500px;
+    box-sizing: content-box;
+    float: left;
 }
-@media only screen and (max-width:580px) {
-    .top>p{
-        font-size: 30px;
+.box02_pic>img{
+    width: 100%;
+}*/
+@media only screen and (max-width:1000px) {
+    .box01{
+        transform: scale(0.9);
+        float: none;
+        margin: auto;
     }
-    .footer{
-        width: 86%;
-        padding: 0;
-        font-size: 18px;
+    .box02{
+        transform: scale(0.8);
+        float: none;
     }
     body{
         width: 100%;

@@ -14,48 +14,55 @@
             url: 'https://v1.hitokoto.cn/',
             success: function(data){
                 $(".text").text(data.hitokoto);
-                $(".footer").fadeIn(1050)
+                $(".box01_footer").fadeIn(1050)
             },
         });
     </script>
 </head>
 <body>
     <div class="wrapper">
-        <div class="box01">
-            <div class="head">
-            </div>
-            <div class="top">
-                <p>小鹅什么都不知道</p>
-                <p>@xiaoebuzhidao65</p>
-            </div>
-            <div class="icon">
-                <div class="twitter_card">
-                    <div class="icon_twitter">
-                        <a href="https://twitter.com/xiaoebuzhidao65">
-                            <img src="assets\images\twitter-logo.png" width="50" height="50" alt="link-my-twitter">
-                        </a>
+        <div class="content">
+            <div class="box01">
+                <div class="box01_top">
+                </div>
+                <div class="box01_middle">
+                    <p>小鹅什么都不知道</p>
+                    <p>@xiaoebuzhidao65</p>
+                </div>
+                <div class="icon">
+                    <div class="card">
+                        <div class="icon-twitter">
+                            <a href="https://twitter.com/" target="_blank">
+                                <img src="assets\images\twitter-logo.png" width="50" height="50" alt="link-my-twitter">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon-bilibili">
+                            <a href="https://space.bilibili.com/397551973" target="_blank">
+                                <img src="assets\images\bilibilii-logo.png" width="88.8" height="50" alt="link-my-bilibili">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon-music163">
+                            <a href="https://music.163.com/#/user/home?id=1742381122" target="_blank">
+                                <img src="assets\images\music163-logo.png" width="50" height="50" alt="link-my-music163">
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="bilibili_card">
-                    <div class="icon_bilibili">
-                        <a href="https://space.bilibili.com/397551973">
-                            <img src="assets\images\bilibilii-logo.png" width="88.8" height="50" alt="link-my-bilibili">
-                        </a>
-                    </div>
-                </div>
-                <div class="music163_card">
-                    <div class="icon_music163">
-                        <a href="https://music.163.com/#/user/home?id=1742381122">
-                            <img src="assets\images\music163-logo.png" width="50" height="50" alt="link-my-music163">
-                        </a>
-                    </div>
+                <div class="box01_footer">
+                        <p class="left">"</p>
+                        <a href="https://hitokoto.cn/" target="_blank"><p class="text"></p></a>
+                        <p class="right">"</p>
                 </div>
             </div>
-            <div class="footer">
-                    <p class="h1-left">"</p>
-                    <p class="text"></p>
-                    <p class="h1-right">"</p>
-            </div>
+            <!--<div class="box02">
+                <div class="box02_pic">
+                    <img src="assets\images\background_image03.jpg">
+                </div>
+            </div>-->
         </div>
     </div>
     
