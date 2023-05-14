@@ -8,50 +8,45 @@
     src: url(../fonts/SmileySans-Oblique.ttf) format(truetype);
 }
 body{
-    background-image:linear-gradient(45deg,#1b1a1f,#413966);
-    background-repeat: no-repeat;
-    background-color: #000;
-    height:100%;
-    width: 98%;
-    padding: 2px;
     font-family: "SmileySans-Obliqu";
 }
 .wrapper{
-    background-image:url(../images/background_image03.jpg);
+    background-image:url(../images/background_image01.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
-    z-index: 1;
+    position: relative;
 }
 .wrapper::after{
+    background-repeat: no-repeat;
     content: "";
-    width:100%;
-    height:100%;
-    position: absolute;
+    width:105%;
+    height:105%;
     left:0;
     top:0;
     background: inherit;
-    filter: blur(10px);
-    z-index: 2;
-    padding: -2px;
+    filter: contrast(70%);
+    z-index: 1;
+    position: fixed;
 }
 .content{
-    box-sizing: content-box;
-}
-.box01{
-    width: 380px;
+    width: 100%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-    margin-top: 100px;
+    z-index: 3;
+}
+.box01{
+    width: 380px;
+    padding-top: 5px;
     margin-left: 150px;
-    position: relative;
+    margin-top: 150px;
+    position: fixed;
     z-index:3;
-    box-sizing: content-box;
     float: left;
 }
 .box01_top{
@@ -89,7 +84,7 @@ body{
     display: flex;
     width: 300px;
     height: auto;
-    padding-top: 10%;
+    padding-top: 20px;
     padding-bottom: 10px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -104,7 +99,7 @@ body{
 }
 .icon-twitter{
     transition: all .2s;
-    filter: grayscale(80%) blur(1px);
+    filter: grayscale(90%) blur(1px);
 }
 .icon-twitter:hover{
     transform: scale(1.1);
@@ -112,7 +107,7 @@ body{
 }
 .icon-bilibili{
     transition: all .2s;
-    filter: grayscale(80%) blur(0.5px);
+    filter: grayscale(90%) blur(0.5px);
 }
 .icon-bilibili:hover{
     transform: scale(1.1);
@@ -120,7 +115,7 @@ body{
 }
 .icon-music163{
     transition: all .2s;
-    filter: grayscale(80%) blur(0.5px);
+    filter: grayscale(90%) blur(0.5px);
 }
 .icon-music163:hover{
     transform: scale(1.1);
@@ -166,34 +161,28 @@ a:link{
     font-weight: bolder;
     font-size: 40px;
 }
-/*.box02{
+.box02{
     width: 380px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    margin-top: 100px;
-    margin-left: 150px;
+    z-index: 3;
     position: relative;
-    z-index:3;
-    box-sizing: content-box;
-    float: left;
+    float: right;
+    margin-right: 10%;
+
 }
 .box02_pic>img{
     width: 100%;
-}*/
+    display: block;
+}
 @media only screen and (max-width:1000px) {
     .box01{
-        transform: scale(0.9);
+        transform: scale(0.8);
         float: none;
         margin: auto;
+        position: relative;
     }
     .box02{
         transform: scale(0.8);
         float: none;
-    }
-    body{
-        width: 100%;
+        margin: auto;
     }
 }
