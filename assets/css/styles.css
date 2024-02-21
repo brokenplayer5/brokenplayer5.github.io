@@ -11,7 +11,7 @@ body{
     font-family: "SmileySans-Obliqu";
 }
 .wrapper{
-    background-image:url(../images/background_image01.jpg);
+    background-image:url(../images/background_image03.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,11 +97,11 @@ body{
     flex: 1;
     text-align: center;
 }
-.icon-twitter{
+.icon-X{
     transition: all .2s;
     filter: grayscale(90%) blur(1px);
 }
-.icon-twitter:hover{
+.icon-X:hover{
     transform: scale(1.1);
     filter: grayscale(0) blur(0);
 }
@@ -172,6 +172,12 @@ a:link{
 .box02_pic>img{
     width: 100%;
     display: block;
+}
+.box02_text{
+    width: 380px;
+    height: auto;
+    font-size: 30PX;
+    text-align: center;
 }
 @media only screen and (max-width:1000px) {
     .box01{
